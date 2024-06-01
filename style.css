@@ -1,3 +1,9 @@
 body{
     background-image: url(https://i1.wp.com/billionaire365.com/wp-content/uploads/2019/02/Ecommerce-Website.jpg?fit=2048%2C1452&ssl=1);
 }
+
+
+.card-img-top {
+    object-fit: cover;
+    height: 400px;
+}
