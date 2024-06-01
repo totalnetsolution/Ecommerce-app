@@ -7,11 +7,11 @@ axios('https://fakestoreapi.com/products')
         div.innerHTML += `
         <div class="col-md-4">
         <div class="card mb-4">
-        <img width="300" src="${item.image}" class="card-img-top" alt="${item.title}">
+        <img width="100px" src="${item.image}" class="card-img-top" alt="${item.title}">
         <div class="card-body">
         <h5 class="card-title">${item.title}</h5>
-        <p class="card-text"><strong>Category:</strong> ${item.category}</p>
-        <p class="card-text"><strong>Price:</strong> $${item.price}</p>
+        <p class="card-text"><b>Category:</b> ${item.category}</p>
+        <p class="card-text"><b>Price:</b> $${item.price}</p>
         </div>
          </div>
         </div>
