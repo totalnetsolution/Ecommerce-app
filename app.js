@@ -5,16 +5,17 @@ axios('https://fakestoreapi.com/products')
     console.log(res.data);
     res.data.forEach((item) => {
         div.innerHTML += `
-        <div class="col-md-4">
-        <div class="card mb-4">
-        <img width="100px" src="${item.image}" class="card-img-top" alt="${item.title}">
-        <div class="card-body">
-        <h5 class="card-title">${item.title}</h5>
-        <p class="card-text"><b>Category:</b> ${item.category}</p>
-        <p class="card-text"><b>Price:</b> $${item.price}</p>
-        </div>
-         </div>
-        </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="${item.image}" alt="Product image" style="height: 400px; object-fit: box;">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.title}</h5>
+                        <p class="card-text">${item.category}</p>
+                        <p class="card-text">${item.description}</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Price: $${item.price}</h6>
+                    </div>
+                </div>
+            </div>
         `;
     });
 })
